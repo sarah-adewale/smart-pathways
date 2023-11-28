@@ -128,8 +128,8 @@ button {
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: 75px;
-    bottom: 135.22px;
+    margin-left: 75px;
+    margin-top: -80px;
     z-index: -1;
     margin-bottom: 150px;
 }
@@ -1123,20 +1123,12 @@ ul {
 
 
     .canada-text {
-        margin-left: -10px;
+        /* margin-left: -10px; */
         /* border: 1px solid red; */
         width: 20px;
     }
 
-    .circle {
-        position: absolute;
-        right: 64.134px;
-        top: 350px;
-        /* border: 1px solid red; */
-        width: 215px;
-        height: 67px;
-        margin-right: 20px;
-    }
+
 
 
 
