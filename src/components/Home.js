@@ -71,7 +71,9 @@ function Home(){
                             <p className='blog-subtitle ml-24'>From our blog</p>
                         </div>
                         <div className='blog-title-mobile'>
-                            <h2 className='blog-title'>Canada Universities reduces cost by 10% for all students for summer 2024</h2>
+                            <div className='blog-title-container'>
+                                <h2 className='blog-title'>Canada Universities reduces cost by 10% for all students for summer 2024</h2>
+                            </div>
                             <div className='flex gap-5 blog-btn-section'>
                                 <Button style={{width:'136px', backgroundColor:'#BDFC6D', color: '#360308', border: '1px solid #BDFC6D'}}>Visit blog</Button>
                                 <Button style={{width:'156px'}}>Read article</Button>
@@ -167,8 +169,10 @@ function Home(){
             </section>
             <section className='testimonials-section flex '>
                 <section className='block'>
-                    <h2 className='testimonials-title'>What our clients say</h2>
-                    <p className='testimonials-subtitle mt-5'>Testimonials from past students and lorem ipsum dolor sit amet consectetur. Ullamcorper amet sed id leo. Vel et maecenas ac adipiscing vulputate lacus ac.</p>
+                    <div className='comment-text-area'>
+                        <h2 className='testimonials-title'>What our clients say</h2>
+                        <p className='testimonials-subtitle mt-5'>Testimonials from past students and lorem ipsum dolor sit amet consectetur. Ullamcorper amet sed id leo. Vel et maecenas ac adipiscing vulputate lacus ac.</p>
+                    </div>
                     <section className='mt-20'>
                         <CommentSlider />
                     </section>
