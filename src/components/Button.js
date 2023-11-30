@@ -1,11 +1,11 @@
 import React from "react";
 
-function Button({children, style}){
+function Button({children, style, onClick}){
 
     return (
         <>
             
-            <button className="" style={style}>{children}</button>
+            <button className="" style={style} onClick={onClick}>{children}</button>
         </>
     )
 }

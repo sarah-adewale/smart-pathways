@@ -1,13 +1,14 @@
 import React from 'react';
 import Button from './Button';
 import Accordion from "./Accordion.js";
-import Brands from './Brands.js';
+// import Brands from './Brands.js';
 import Card from './Card.js';
 import CommentSlider from './CommentSlider.js';
+// import { ReactComponent as Carlendar} from './svgs/carlender.svg';
 import Footer from './Footer.js';
-// import CustomLink from './CustomLink.js';
 
 function Home(){
+
 
     return (
         <>
@@ -16,7 +17,7 @@ function Home(){
                 <section className='hero-section'>
                     <div className='flex gap-80 mobile-hero-title-section'>
                         <div className='block gap-10 mt-36 hero-text-btn'>
-                            <h1 className='hero-text'>Welcome to your gateway to success in <span className='canada-text'><img className='circle ml-28' src="/images/greencircle.png" alt="" />Canada!</span> </h1>
+                            <h1 className='hero-text'>Welcome to your gateway to success in <span className='canada-text'><img className='circle ml-26' src="/images/greencircle.png" alt="" />Canada!</span> </h1>
                             <p className='hero-subtitle'>We provide guidance and support for scholarships and financial aid programs.</p>
                             <div className="appointment-button">
                                 <div className=' mobile-appointment-btn'>
@@ -26,6 +27,7 @@ function Home(){
                                             <path d="M0 4.5H14V12.5C14 13.3284 13.3284 14 12.5 14H1.5C0.671573 14 0 13.3284 0 12.5V4.5Z" fill="#BCABAC"/>
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M7.75 6.75C7.75 6.33579 7.41421 6 7 6C6.58579 6 6.25 6.33579 6.25 6.75V8.5H4.5C4.08579 8.5 3.75 8.83579 3.75 9.25C3.75 9.66421 4.08579 10 4.5 10H6.25V11.75C6.25 12.1642 6.58579 12.5 7 12.5C7.41421 12.5 7.75 12.1642 7.75 11.75V10H9.5C9.91421 10 10.25 9.66421 10.25 9.25C10.25 8.83579 9.91421 8.5 9.5 8.5H7.75V6.75Z" fill="#79575A"/>
                                         </svg>
+                                        
                                     </Button>
                                     
                                 </div>
@@ -37,7 +39,7 @@ function Home(){
                     </div>
 
                 </section>
-                <Brands />
+                {/* <Brands /> */}
             </section>
             
             <section className='service-hero-section'>
@@ -91,8 +93,8 @@ function Home(){
                         </div>
                     </div>
                 
-                    <section className='mt-44'>
-                        <div className='flex card-container gap-5'>
+                    <section className='mt-44 ml-44 card-container-section' >
+                        <div className='flex card-container gap-5' >
                             <Card
                                 title="Expertise"
                                 subtitle="Our seasoned professionals have extensive experience in international education, immigration, and career development."
@@ -178,7 +180,7 @@ function Home(){
                     </section>
                     
                 </section>
-                
+               
                
             </section>
             <Footer />
