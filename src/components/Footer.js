@@ -25,7 +25,7 @@ const Footer = () => {
                         </div>
                         <div className="block footer-links">
                             <p className="business-links-title">QuickLinks</p>
-                            <CustomLink className="company-links-text">Book an appointment</CustomLink>
+                            <CustomLink to={'https://calendly.com/smartpathways/30min'} target={'_blank'} className="company-links-text">Book an appointment</CustomLink>
                             <CustomLink className="company-links-text">Start Application</CustomLink>
                             {/* <CustomLink className="company-links-text">Immigration Assessment Form</CustomLink> */}
                             <CustomLink className="company-links-text">Get Brochure</CustomLink>
@@ -59,7 +59,7 @@ const Footer = () => {
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 0.25C0.671573 0.25 0 0.92157 0 1.75V10.25C0 11.0784 0.671573 11.75 1.5 11.75H12.5C13.3284 11.75 14 11.0784 14 10.25V1.75C14 0.92157 13.3284 0.25 12.5 0.25H1.5Z" fill="#BCABAC"/>
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M14 2.0918L7.38341 6.50364C7.29008 6.56365 7.15463 6.60648 7 6.60648C6.84537 6.60648 6.70992 6.56365 6.61659 6.50364L0 2.0918V3.5942L5.92657 7.54599L5.93237 7.54976C6.24703 7.75458 6.62486 7.85648 7 7.85648C7.37514 7.85648 7.753 7.75461 8.06765 7.5498L14 3.59419V2.0918Z" fill="#572D31"/>
                                 </svg>
-                                <CustomLink className="company-email-address">info@smartpathways.ca</CustomLink>
+                                <CustomLink to={'mailto:info@smartpathways.ca'} className="company-email-address">info@smartpathways.ca</CustomLink>
                                 
                             </div>
                             <p className="copyright-text">© Copyright 2023. SmartPathways Inc</p>
@@ -77,7 +77,7 @@ const Footer = () => {
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 0.25C0.671573 0.25 0 0.92157 0 1.75V10.25C0 11.0784 0.671573 11.75 1.5 11.75H12.5C13.3284 11.75 14 11.0784 14 10.25V1.75C14 0.92157 13.3284 0.25 12.5 0.25H1.5Z" fill="#BCABAC"/>
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M14 2.0918L7.38341 6.50364C7.29008 6.56365 7.15463 6.60648 7 6.60648C6.84537 6.60648 6.70992 6.56365 6.61659 6.50364L0 2.0918V3.5942L5.92657 7.54599L5.93237 7.54976C6.24703 7.75458 6.62486 7.85648 7 7.85648C7.37514 7.85648 7.753 7.75461 8.06765 7.5498L14 3.59419V2.0918Z" fill="#572D31"/>
                                 </svg>
-                                <CustomLink className="company-email-address">info@smartpathways.ca</CustomLink>
+                                <CustomLink to={'mailto:info@smartpathways.ca'} className="company-email-address">info@smartpathways.ca</CustomLink>
                             </div>
 
                             <div className="block mt-10 gap-10 info">

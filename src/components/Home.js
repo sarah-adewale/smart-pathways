@@ -4,6 +4,7 @@ import Accordion from "./Accordion.js";
 // import Brands from './Brands.js';
 import Card from './Card.js';
 import CommentSlider from './CommentSlider.js';
+import CustomLink from './CustomLink.js';
 // import { ReactComponent as Carlendar} from './svgs/carlender.svg';
 import Footer from './Footer.js';
 
@@ -26,15 +27,16 @@ function Home(){
                             
                             <div className="appointment-button">
                                 <div className=' mobile-appointment-btn'>
-                                    <Button className="flex" style={{color: '#DDD4D5', width: '244px'}}>Book an appointment
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none" className='booking-icon'>
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 0C4.05228 0 4.5 0.447715 4.5 1V2H9.50009V1C9.50009 0.447715 9.94781 0 10.5001 0C11.0524 0 11.5001 0.447715 11.5001 1V2H12.5C13.3284 2 14 2.67157 14 3.5V4.5H0V3.5C0 2.67157 0.671573 2 1.5 2H2.5V1C2.5 0.447715 2.94772 0 3.5 0Z" fill="#79575A"/>
-                                            <path d="M0 4.5H14V12.5C14 13.3284 13.3284 14 12.5 14H1.5C0.671573 14 0 13.3284 0 12.5V4.5Z" fill="#BCABAC"/>
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.75 6.75C7.75 6.33579 7.41421 6 7 6C6.58579 6 6.25 6.33579 6.25 6.75V8.5H4.5C4.08579 8.5 3.75 8.83579 3.75 9.25C3.75 9.66421 4.08579 10 4.5 10H6.25V11.75C6.25 12.1642 6.58579 12.5 7 12.5C7.41421 12.5 7.75 12.1642 7.75 11.75V10H9.5C9.91421 10 10.25 9.66421 10.25 9.25C10.25 8.83579 9.91421 8.5 9.5 8.5H7.75V6.75Z" fill="#79575A"/>
-                                        </svg>
-                                        
-                                    </Button>
-                                    
+                                    <CustomLink to="https://calendly.com/smartpathways/30min" target='_blank'>
+                                        <Button className="flex" style={{color: '#DDD4D5', width: '244px'}}>Book an appointment
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none" className='booking-icon'>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 0C4.05228 0 4.5 0.447715 4.5 1V2H9.50009V1C9.50009 0.447715 9.94781 0 10.5001 0C11.0524 0 11.5001 0.447715 11.5001 1V2H12.5C13.3284 2 14 2.67157 14 3.5V4.5H0V3.5C0 2.67157 0.671573 2 1.5 2H2.5V1C2.5 0.447715 2.94772 0 3.5 0Z" fill="#79575A"/>
+                                                <path d="M0 4.5H14V12.5C14 13.3284 13.3284 14 12.5 14H1.5C0.671573 14 0 13.3284 0 12.5V4.5Z" fill="#BCABAC"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.75 6.75C7.75 6.33579 7.41421 6 7 6C6.58579 6 6.25 6.33579 6.25 6.75V8.5H4.5C4.08579 8.5 3.75 8.83579 3.75 9.25C3.75 9.66421 4.08579 10 4.5 10H6.25V11.75C6.25 12.1642 6.58579 12.5 7 12.5C7.41421 12.5 7.75 12.1642 7.75 11.75V10H9.5C9.91421 10 10.25 9.66421 10.25 9.25C10.25 8.83579 9.91421 8.5 9.5 8.5H7.75V6.75Z" fill="#79575A"/>
+                                            </svg>
+                                            
+                                        </Button>
+                                    </CustomLink>
                                 </div>
                             </div>
                         </div>
@@ -215,7 +217,7 @@ function Home(){
                 <section className='block'>
                     <div className='comment-text-area'>
                         <h2 className='testimonials-title'>What our clients say</h2>
-                        <p className='testimonials-subtitle mt-5'>Testimonials from past students and lorem ipsum dolor sit amet consectetur. Ullamcorper amet sed id leo. Vel et maecenas ac adipiscing vulputate lacus ac.</p>
+                        <p className='testimonials-subtitle mt-5'>Take a closer look at what customers are saying about us.</p>
                     </div>
                     <section className='mt-20'>
                         <CommentSlider />

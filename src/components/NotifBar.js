@@ -24,7 +24,7 @@ function NotifBar(){
                                 <path opacity="0.15" d="M228.5 1L0.499998 1" stroke="#FBFBF6"/>
                             </svg>
                             <div className="notif-bar-link">
-                                <CustomLink className="notif-button">Apply Now</CustomLink>
+                                <CustomLink to={'https://calendly.com/smartpathways/30min'} target={'_blank'} className="notif-button">Book an Appointment</CustomLink>
                             </div>
                       
                     </section>
