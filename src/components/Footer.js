@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <>
             <footer>
-                <div>
+                <div className="form-container">
                     <FooterSubscribeForm />
                 </div>
                 <div className="footer-mobile-logo">
@@ -27,7 +27,7 @@ const Footer = () => {
                             <p className="business-links-title">QuickLinks</p>
                             <CustomLink className="company-links-text">Book an appointment</CustomLink>
                             <CustomLink className="company-links-text">Start Application</CustomLink>
-                            <CustomLink className="company-links-text">Immigration Assessment Form</CustomLink>
+                            {/* <CustomLink className="company-links-text">Immigration Assessment Form</CustomLink> */}
                             <CustomLink className="company-links-text">Get Brochure</CustomLink>
                         </div>
                         <div className="footer-logo">
@@ -71,7 +71,7 @@ const Footer = () => {
                     {/* mobile cta */}
                     <div className="flex mobile-cta-section mt-20">
                         <div className="block gap-20">
-                            <div><SocialIcons /></div>
+                            <div className="socials"><SocialIcons /></div>
                             <div className="block mt-10 info">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12" fill="none" className="info-icon">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 0.25C0.671573 0.25 0 0.92157 0 1.75V10.25C0 11.0784 0.671573 11.75 1.5 11.75H12.5C13.3284 11.75 14 11.0784 14 10.25V1.75C14 0.92157 13.3284 0.25 12.5 0.25H1.5Z" fill="#BCABAC"/>
@@ -95,10 +95,10 @@ const Footer = () => {
                                         <circle cx="3" cy="3.5" r="3" fill="#E4DBDB"/>
                                     </svg>
                                     <CustomLink className="company-links-text">Terms Of Service</CustomLink>
+                                </div >
+                                <div className="mt-5">
+                                    <p className="copyright-text">© Copyright 2023. SmartPathways Inc</p>
                                 </div>
-                                    <div className="mt-5">
-                                        <p className="copyright-text">© Copyright 2023. SmartPathways Inc</p>
-                                    </div>
                             </div>
                             
                         </div>

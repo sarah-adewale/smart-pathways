@@ -51,18 +51,18 @@ const Accordion = () => {
 
   return (
     <>
-    <div className='flex'>
+    <div className='flex' >
         <div className="accordion-container mt-20">
-            <div>
+            <div >
                 {accordionData.map((item, index) => (
-                <div
+                <div 
                 key={index}
                 className={`accordion-item ${index === activeIndex ? 'active' : ''}`}
                 onMouseOver={() => handleAccordionHover(index)}
                 >   
-                    <div className='flex'>
+                    <div className='flex' >
                         <div className="icon"></div>
-                        <div className="accordion-title service-title">{item.title}</div>
+                        <div className="accordion-title service-title" >{item.title}</div>
                     </div>
                     <div className="accordion-content service-subtitle mt-5">{item.content}</div>
                 </div>
@@ -71,7 +71,7 @@ const Accordion = () => {
             </div>
             
         </div>
-        <div className="image-container">
+        <div className="image-container" >
             <img src={accordionData[activeIndex].image} alt={`Accordion ${activeIndex + 1}`} />
         </div>
     </div>

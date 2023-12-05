@@ -12,13 +12,18 @@ function Home(){
 
     return (
         <>
-        <section className='body-bg'>
+        <section className='body-bg' >
             <section className='hero-section-background'>
                 <section className='hero-section'>
                     <div className='flex gap-80 mobile-hero-title-section'>
                         <div className='block gap-10 mt-36 hero-text-btn'>
-                            <h1 className='hero-text'>Welcome to your gateway to success in <span className='canada-text'><img className='circle ml-26' src="/images/greencircle.png" alt="" />Canada!</span> </h1>
-                            <p className='hero-subtitle'>We provide guidance and support for scholarships and financial aid programs.</p>
+                            <div className='hero-text-container'>
+                                <h1 className='hero-text'>Welcome to your gateway to success in <span className='canada-text'><img className='circle ml-26' src="/images/greencircle.png" alt="" />Canada!</span> </h1>
+                                <p className='hero-subtitle'>We provide guidance and support for scholarships and financial aid programs.</p>
+                                {/* mobile */}
+                                <p className='mobile-hero-subtitle' style={{fontSize: "1.6rem", width: '360px', textAlign: "center", justifyContent: 'center', alignContent: 'center'}}>We provide guidance and support for scholarships and financial aid programs.</p>
+                            </div>
+                            
                             <div className="appointment-button">
                                 <div className=' mobile-appointment-btn'>
                                     <Button className="flex" style={{color: '#DDD4D5', width: '244px'}}>Book an appointment
@@ -33,33 +38,35 @@ function Home(){
                                 </div>
                             </div>
                         </div>
-                        <div className='mt-20'>
-                            <img src="/images/hero-image.png" alt="" className='hero-image'/>
+                        <div className='mt-20 hero-image-container' >
+                            <img src="/images/hero-image.png" alt="" className='hero-image' />
                         </div>
                     </div>
 
                 </section>
                 {/* <Brands /> */}
             </section>
+
             
-            <section className='service-hero-section'>
-                <div className='service-hero-background'>
-                    <div className='block mobile-service-section'>
-                        <h2 className='services-title'>Our Services</h2>
-                        <p className='services-subtitle'>Our comprehensive suite of services is designed to empower you with the knowledge, skills, and support you need to succeed on your educational and professional journey.</p>
+            
+            <section className='service-hero-section' >
+                <div className='service-hero-background' >
+                    <div className='block mobile-service-section' >
+                        <h2 className='services-title' >Our Services</h2>
+                        <p className='services-subtitle' >Our comprehensive suite of services is designed to empower you with the knowledge, skills, and support you need to succeed on your educational and professional journey.</p>
                     </div>
-                    <div className='mt-28 accordion-mobile'>
+                    <div className='mt-28 accordion-mobile' >
                         <Accordion />
                     </div>
                 </div>
             </section>
 
-            <section className='blog-section'>
+            <section className='blog-section' >
                 <section className='blog-section-background flex gap-60'>
                     <img src="/images/blog-img.png" alt="" className='blog-image'/>
                     <section className='mt-24 blog-info' >
-                        <div className='flex ml-80 blog-text'>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="209" height="74" viewBox="0 0 209 74" fill="none" className='ml-52 blog-circle'>
+                        <div className='flex ml-80 blog-text' >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="209" height="74" viewBox="0 0 209 74" fill="none" className='ml-52 blog-circle' >
                                 <g clip-path="url(#clip0_873_49257)">
                                     <path d="M27.9601 56.1486C28.5421 55.9755 29.0921 55.7088 29.5885 55.3588C30.9301 54.4148 31.5937 52.6989 30.9552 51.1841C30.2378 49.4862 28.2363 48.9514 26.5002 48.4596C22.4396 47.3044 18.6273 45.4084 15.2552 42.867C14.6059 42.3923 14.0367 41.8167 13.5693 41.1619C10.7464 37.0841 14.2867 33.236 17.6692 30.9494C25.7362 25.5076 35.2129 22.5533 44.6896 20.3457C69.9918 14.4516 96.1442 13.4141 122.114 12.6567C142.265 12.068 163.005 10.7291 182.794 15.5572C189.387 17.1653 202.655 20.317 199.721 30.1633C199.099 32.137 197.988 33.9214 196.492 35.3503C193.225 38.581 188.565 40.9968 184.426 43.0788C171.115 49.7698 156.616 53.8081 142.075 56.9742C122.062 61.288 101.712 63.8535 81.2548 64.6416C61.8423 65.4241 39.1621 66.5979 20.5674 60.4525C19.8214 62.2114 21.6435 63.956 23.272 64.9252C34.0794 71.286 47.1717 72.7972 59.4677 73.4757C103.587 75.9094 154.439 70.2665 193.931 49.1093C200.334 45.6812 206.963 41.0147 208.638 33.9396C210.844 24.5707 203.257 15.611 194.936 10.7866C182.295 3.46014 167.295 1.55046 152.714 0.678182C131.16 -0.606901 109.523 0.046408 87.9911 1.69763C69.0198 3.15502 50.0377 5.39136 31.5973 10.0938C23.5589 12.1398 15.3986 14.8141 8.60137 19.7103C5.73183 21.7851 1.89739 24.7071 0.846421 28.1926C-0.413828 32.1992 -0.215569 36.523 1.406 40.3973C2.2717 42.5178 3.48389 44.4794 4.99294 46.2017C9.41205 51.2272 15.7824 54.0989 22.2425 55.7932C24.1113 56.2993 26.1272 56.687 27.9601 56.1486Z" fill="#CDFC91"/>
                                 </g>
@@ -70,13 +77,13 @@ function Home(){
                                 </defs>
                             </svg>
 
-                            <p className='blog-subtitle ml-24'>From our blog</p>
+                            <p className='blog-subtitle ml-24' >From our blog</p>
                         </div>
-                        <div className='blog-title-mobile'>
-                            <div className='blog-title-container'>
-                                <h2 className='blog-title'>Canada Universities reduces cost by 10% for all students for summer 2024</h2>
+                        <div className='blog-title-mobile' >
+                            <div className='blog-title-container' >
+                                <h2 className='blog-title' >Canada Universities reduces cost by 10% for all students for summer 2024</h2>
                             </div>
-                            <div className='flex gap-5 blog-btn-section'>
+                            <div className='flex gap-5 blog-btn-section' >
                                 <Button style={{width:'136px', backgroundColor:'#BDFC6D', color: '#360308', border: '1px solid #BDFC6D'}}>Visit blog</Button>
                                 <Button style={{width:'156px'}}>Read article</Button>
                             </div>
@@ -84,16 +91,18 @@ function Home(){
                     </section>
                 </section>
             </section>
-            <section className='why-choose-us-section'>
-                <section className='why-choose-us-section-bg'>
-                    <div className='why-choose-us-text'>
-                        <h2 className='why-choose-us-title'>Why choose us</h2>
-                        <div className='subtitle-section-mobile'>
-                            <p className='why-choose-us-subtitle'>Our comprehensive suite of services is designed to empower you with the knowledge, skills, and support you need to succeed on your educational and professional journey.</p>
+            <section className='why-choose-us-section' >
+                <section className='why-choose-us-section-bg' >
+                    <div className='why-choose-us-text' >
+                        <h2 className='why-choose-us-title' >Why choose us</h2>
+                        {/* mobile */}
+                        <h2 className='mobile-why-choose-us-title' >Why choose us</h2>
+                        <div className='subtitle-section-mobile' >
+                            <p className='why-choose-us-subtitle' >Our comprehensive suite of services is designed to empower you with the knowledge, skills, and support you need to succeed on your educational and professional journey.</p>
                         </div>
                     </div>
                 
-                    <section className='mt-44 ml-44 card-container-section' >
+                    <section className='mt-44 ml-44 card-container-section'>
                         <div className='flex card-container gap-5' >
                             <Card
                                 title="Expertise"
@@ -123,6 +132,39 @@ function Home(){
 
                            
                         </div>
+                        
+                    </section>
+                    <section className='mt-44 ml-44 mobile-card-container' >
+                        <div className='flex card-container gap-5 mt-20'>
+                            <Card
+                                title="Expertise"
+                                subtitle="Our seasoned professionals have extensive experience in international education, immigration, and career development."
+                                image="/images/choose-us-banner.png" // Replace with the actual image URL
+                                className="custom-card mb-20" // Apply custom styles for this card
+                            />
+
+                            <Card
+                                title="Personalised Approach"
+                                subtitle="We understand that every journey is unique, which is why we tailor our services to your specific needs."
+                                image="/images/choose-us-banner1.png" // Replace with the actual image URL
+                                className="custom-card" // Apply custom styles for this card
+                            />
+                            <Card
+                                title="Success Stories"
+                                subtitle="Our track record speaks for itself – countless students and PRs have achieved their goals with our assistance. (Read Client’s Review)"
+                                image="/images/choose-us-banner2.png" // Replace with the actual image URL
+                                className="custom-card mb-20 higher-card" // Apply custom styles for this card
+                            />
+                            <Card
+                                title="Comprehensive Support"
+                                subtitle="From the first consultation to settling into your Canadian life, we're here to guide you at every stage."
+                                image="/images/choose-us-banner3.png" // Replace with the actual image URL
+                                className="custom-card" // Apply custom styles for this card
+                            />
+
+                           
+                        </div>
+                        
                     </section>
                 </section>
             </section>
@@ -169,7 +211,7 @@ function Home(){
                     </div>
                 </section>
             </section>
-            <section className='testimonials-section flex '>
+            <section className='testimonials-section flex' >
                 <section className='block'>
                     <div className='comment-text-area'>
                         <h2 className='testimonials-title'>What our clients say</h2>

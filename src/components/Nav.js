@@ -35,8 +35,8 @@ function Nav(){
                         <div className="ml-36 site-logo">
                             <CustomLink to="/" ><img src="/images/logo.png" alt="site-logo" /> </CustomLink>
                         </div>
-                        <div className="flex gap-96 mobile-menu-section">
-                        <input type="checkbox" id="menu-toggle" className="menu-toggle" checked={menuOpen} onChange={toggleMenu} />
+                        <div className="flex gap-96 mobile-menu-section" >
+                        <input type="checkbox" id="menu-toggle" className="menu-toggle" checked={menuOpen} onChange={toggleMenu}/>
                         <label htmlFor="menu-toggle" className="hamburger">
                             <div className="bar"></div>
                             <div className="bar"></div>

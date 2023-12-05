@@ -6,7 +6,7 @@ const FooterSubscribeForm = () => {
     return (
         <>
         <section className="mt-52 subscrber-form">
-            <section className="subscribe-form-bg">
+            <section className="subscribe-form-bg" >
                 <h2 className="subscribe-form-title">Join our newsletter</h2>
                 <p className="subscribe-form-subtitle">Get first hand information and updates on our services and offerings</p>
                 <form action="">

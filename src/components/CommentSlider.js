@@ -20,34 +20,34 @@ const CommentSlider = () => {
 
   const comments = [
     {
-        comm: "“There’s all this spanish text on my site i'll know it when i see it, nor i need this to work in internet explorer!, are you busy this weekend?”",
-         named: "Rachel Greene",
-         school: "2016 Vancouver State Alumni"
+        comm: "“I will rate the Smartpathways service a 10/10. It was Great. They helped me avoid mistakes and pitfalls in my admission process.”",
+        //  named: "Precious",
+         school: "Precious"
        
     },
     {
-       comm: "“What I found most comforting was that this would allow... all our emplThere’s all this spanish text on my site i'll”",
-         named: "Ross Geller",
-         school: "2021 British Columbia Alumni"
+       comm: "“A friend recommended them, and I can honestly say it was the best decision I made as a PR in Canada. They were so consistent, and I love that.”",
+        //  named: "Ross Geller",
+         school: "Brian"
     },
     {
-        comm: "“There’s all this spanish text on my site i'll know it when i see it, nor i need this to work in internet explorer!, are you busy this weekend?”",
-         named: "Phoebe Buffay",
-         school: "2021 British Columbia Alumni"
+        comm: "“The staff at Smartpathways are the best. Beyond their excellent services, you could tell that they genuinely care and want to help.”",
+        //  named: "Phoebe Buffay",
+         school: "Tolu"
     },
      {
-        comm: "“There’s all this spanish text on my site i'll know it when i see it, nor i need this to work in internet explorer!, are you busy this weekend?””",
-         named: "Joey Tribbiani",
-         school: "2020 Vancouver State Alumni"
+        comm: "“One thing I’d say about smartpathways is you will get results. They are transparent and effective. As an international student from Ghana, i can tell you, It's rare”",
+        //  named: "Joey Tribbiani",
+         school: "Becky"
     }, {
-        comm: "“Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”",
-         named: "Sarah Ruth",
-         school: "2020 Vancouver State Alumni"
+        comm: "“Smartpathways helped me through my scholarship application process. Their services are top-notch, and I will 100% refer anybody”",
+        //  named: "Sarah Ruth",
+         school: "Joshua Karis"
     },
      {
-        comm: "“There’s all this spanish text on my site i'll know it when i see it, nor i need this to work in internet explorer!, are you busy this weekend?”",
-         named: "Kenenna Agbo",
-         school: "2021 British Columbia Alumni"
+        comm: "“I joined one of the webinars for PRs, and it changed how I approached my job search. Months later, I have gotten multiple offers, and I am finally settled.”",
+        //  named: "Kenenna Agbo",
+         school: "Ama"
     }
 ]
 
