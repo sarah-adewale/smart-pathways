@@ -17,7 +17,7 @@ function Nav(){
   };
 
       const dropdownItems = [
-    { text: 'Book an appointment', link: '#' },
+    { text: 'Book an appointment', link: 'https://calendly.com/smartpathways/30min' },
     { text: 'Immigration assessment form', link: '#' },
     { text: 'Start application', link: '#' },
   ];
@@ -45,9 +45,9 @@ function Nav(){
                     
                         <ul className={`menu ${menuOpen ? 'active' : ''}`}>
                             <div className="flex gap-12 mr-72 mobile-nav">
-                                <CustomLink to="/about" >About</CustomLink>
-                                <CustomLink to="/international-student" class="">International Students</CustomLink>
-                                <CustomLink to="/permanent-residence">Permanent Residence</CustomLink>
+                                <CustomLink to="#" >About</CustomLink>
+                                <CustomLink to="#" class="">International Students</CustomLink>
+                                <CustomLink to="#">Permanent Residence</CustomLink>
                             </div>
                         </ul>
                             <div>
