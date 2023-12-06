@@ -6,7 +6,7 @@ import Card from './Card.js';
 import CommentSlider from './CommentSlider.js';
 import CustomLink from './CustomLink.js';
 // import { ReactComponent as Carlendar} from './svgs/carlender.svg';
-import Footer from './Footer.js';
+// import Footer from './Footer.js';
 
 function Home(){
 
@@ -227,7 +227,7 @@ function Home(){
                
                
             </section>
-            <Footer />
+            {/* <Footer /> */}
         </section>
         
         </>

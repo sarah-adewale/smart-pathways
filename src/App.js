@@ -3,6 +3,7 @@ import Home from './components/Home';
 import About from './components/About';
 import InternationalStudent from './components/InternationalStudents';
 import PermanentResidence from './components/PermanentResidence';
+import Footer from './components/Footer';
 
 import { Route, Routes } from 'react-router-dom';
 
@@ -36,6 +37,7 @@ function App() {
               <Route path="/permanent-residence" element={<PermanentResidence />}></Route>
             </Routes>
           </div>
+          <Footer />
      
     </>
   );
