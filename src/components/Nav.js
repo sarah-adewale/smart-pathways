@@ -45,8 +45,8 @@ function Nav(){
                     
                         <ul className={`menu ${menuOpen ? 'active' : ''}`}>
                             <div className="flex gap-12 mr-72 mobile-nav">
-                                <CustomLink to="#" >About</CustomLink>
-                                <CustomLink to="#" class="">International Students</CustomLink>
+                                <CustomLink to="/about" >About</CustomLink>
+                                <CustomLink to="/international-student" class="">International Students</CustomLink>
                                 <CustomLink to="#">Permanent Residence</CustomLink>
                             </div>
                         </ul>
