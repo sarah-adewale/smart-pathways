@@ -45,7 +45,7 @@ const Footer = () => {
                                 <p className="company-address">West 33rd Street, Hamilton, l9C 5J7 ON, Canada</p>
                         </div>
                         <div className="flex gap-5 mt-10">
-                                <CustomLink className="company-links-text">Privacy Policy</CustomLink>
+                                <CustomLink to={'/images/privacy-policy.pdf'} target={'_blank'} className="company-links-text">Privacy Policy</CustomLink>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="6" height="7" viewBox="0 0 6 7" fill="none" className="mt-2.5">
                                     <circle cx="3" cy="3.5" r="3" fill="#E4DBDB"/>
                                 </svg>
@@ -90,7 +90,7 @@ const Footer = () => {
                             </div>
                             <div className="mt-20 privacy-container gap-5">
                                 <div className="policy-section flex gap-5">
-                                    <CustomLink className="company-links-text">Privacy Policy</CustomLink>
+                                    <CustomLink to={'/images/privacy-policy.pdf'} target={'_blank'} className="company-links-text">Privacy Policy</CustomLink>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="6" height="7" viewBox="0 0 6 7" fill="none" className="mt-2.5">
                                         <circle cx="3" cy="3.5" r="3" fill="#E4DBDB"/>
                                     </svg>
