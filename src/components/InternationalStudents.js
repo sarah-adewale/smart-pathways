@@ -8,17 +8,19 @@ function InternationalStudent(){
         <>
             <section className='body-bg'>
                 <section className="is-hero">
-                    <h2 className="is-hero-title">Welcome to Smart <br></br> Pathways International <br></br> Student Hub!</h2>
-                    <p className="is-hero-subtitle">Are you an international student with dreams of studying in Canada, the <br></br> land of diverse cultures, stunning landscapes, and world-class education? <br></br> You've come to the right place! The International Students' Hub is your one-stop <br></br> resource for everything you need to thrive in your Canadian adventure.</p>
+                    <h2 className="is-hero-title">Welcome to Smart Pathways International Student Hub!</h2>
+                    <p className="is-hero-subtitle">Are you an international student with dreams of studying in Canada, the land of diverse cultures, stunning landscapes, and world-class education? You've come to the right place! The International Students' Hub is your one-stop resource for everything you need to thrive in your Canadian adventure.</p>
                     <img src="/images/Is.png" alt="" className="mt-20"/>
                 </section>
 
                 <section className="choose-canada-section">
                     <section className="choose-canada-section-bg">
                         <section className="choose-canada-section-content">
-                            <h2 className="choose-canada-content-title">Why Choose Canada?</h2>
-                            <p className="choose-canada-content-subtitle">Canada is renowned for its high-quality education system, multicultural <br /> environment, and exceptional opportunities for personal and professional growth.<br /> As an international student, studying in Canada can be a life-changing experience. </p>
-                            <section className="flex gap-80 m-20">
+                           
+                                <h2 className="choose-canada-content-title">Why Choose Canada?</h2>
+                                <p className="choose-canada-content-subtitle">Canada is renowned for its high-quality education system, multicultural <br /> environment, and exceptional opportunities for personal and professional growth.<br /> As an international student, studying in Canada can be a life-changing experience. </p>
+                           
+                            <section className="flex gap-80 m-20 choose-canada-right-section-plus-img">
                                 <section className="choose-canada-right-section ml-24">
                                     <div>
                                         <h2 className="choose-canada-right-title">World Class Education</h2>
@@ -41,7 +43,10 @@ function InternationalStudent(){
                                         <p className="choose-canada-right-subtitle ml-8 mt-8">Canadian institutions foster innovation and provide numerous opportunities for internships and co-op programs, setting you on the path to a successful career.</p>
                                     </div>
                                 </section>
-                                <img src="/images/choose-canada-img.png" alt="" />
+                                <img src="/images/choose-canada-img.png" alt="" className="choose-canada-img" />
+                                <div className="choose-canada-img-mobile">
+                                    <img src="/images/choose-canada-mobile2.png" alt=""  />
+                                </div>
                             </section>
                         </section>
                         
@@ -60,42 +65,55 @@ function InternationalStudent(){
                                     <img src="/images/visa-icon.svg" alt=""/>
                                 </div>
                                 <p className="help-section-content-title">Study Consultation</p>
-                                <p className="help-section-content-subtitle">Get expert advice on choosing the right Canadian university or college and the perfect program to match your goals</p>
+                                <div className="help-sub-text-area">
+                                    <p className="help-section-content-subtitle">Get expert advice on choosing the right Canadian university or college and the perfect program to match your goals</p>
+                                </div>
                             </div>
                             <div className="help-section-content">
                                 <div className="help-section-content-icon">
                                     <img src="/images/help-icon5.svg" alt="" />
                                 </div>
+                                
                                 <p className="help-section-content-title">Visa Application Assistance</p>
-                                <p className="help-section-content-subtitle">Navigate the immigration process with confidence. We will connect you to a licenced immigration consultant to go through your visa applications and ensure compliance with Canadian regulations</p>
+                                <div className="help-sub-text-area">
+                                    <p className="help-section-content-subtitle">Navigate the immigration process with confidence. We will connect you to a licenced immigration consultant to go through your visa applications and ensure compliance with Canadian regulations</p>
+                                </div>
                             </div>
                             <div className="help-section-content">
                                 <div className="help-section-content-icon">
                                     <img src="/images/help-icon2.svg" alt="" />
                                 </div>
                                 <p className="help-section-content-title">Scholarship Opportunities</p>
-                                <p className="help-section-content-subtitle">Discover financial aid options, including scholarships and grants, to make your education in Canada affordable</p>
+                                <div className="help-sub-text-area">
+                                    <p className="help-section-content-subtitle">Discover financial aid options, including scholarships and grants, to make your education in Canada affordable</p>
+                                </div>
                             </div>
                             <div className="help-section-content">
                                 <div className="help-section-content-icon">
                                     <img src="/images/help-icon4.svg" alt="" />
                                 </div>
                                 <p className="help-section-content-title">Academic Support</p>
-                                <p className="help-section-content-subtitle">Access resources to help you excel in your studies, from research assistance to study tips</p>
+                                <div className="help-sub-text-area">
+                                    <p className="help-section-content-subtitle">Access resources to help you excel in your studies, from research assistance to study tips</p>
+                                </div>
                             </div>
                             <div className="help-section-content">
                                 <div className="help-section-content-icon">
                                     <img src="/images/help-icon1.svg" alt="" />
                                 </div>
                                 <p className="help-section-content-title" >Cultural Integration</p>
-                                <p className="help-section-content-subtitle">Learn about Canadian culture, customs, and local tips to adapt seamlessly to your new home</p>
+                                <div className="help-sub-text-area">
+                                    <p className="help-section-content-subtitle">Learn about Canadian culture, customs, and local tips to adapt seamlessly to your new home</p>
+                                </div>
                             </div>
                             <div className="help-section-content">
                                 <div className="help-section-content-icon">
                                     <img src="/images/help-icon3.svg" alt="" />
                                 </div>
                                 <p className="help-section-content-title">Essential Resources</p>
-                                <p className="help-section-content-subtitle">Access practical information on housing, healthcare, and more to make your transition to Canada stress-free</p>
+                                <div className="help-sub-text-area">
+                                    <p className="help-section-content-subtitle">Access practical information on housing, healthcare, and more to make your transition to Canada stress-free</p>
+                                </div>
                             </div>
                             
                             {/* <img src="/svgs/carlender.svg" alt="" /> */}

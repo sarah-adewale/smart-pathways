@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 const CommentCard = ({ comm, named, school}) => {
   // Extracting the first 10 words
-  const truncatedText = comm.split(' ').slice(0, 13).join(' ');
+  const truncatedText = comm.split(' ').slice(0, 10).join(' ');
   
 // console.log(`${named}, ${truncatedText}`)
   return (
@@ -31,7 +31,7 @@ CommentCard.propTypes = {
   comm: PropTypes.string.isRequired,
   named: PropTypes.string.isRequired,
   school: PropTypes.string.isRequired,
-//   comm: PropTypes.string.isRequired,
+
 };
 
 export default CommentCard;
