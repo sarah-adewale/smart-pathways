@@ -1082,6 +1082,7 @@ ul {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+
 }
 
 .about-hero-text-2 {
@@ -2457,6 +2458,12 @@ ul {
 
     }
 
+    .about-hero-text,
+    .svg-text {
+
+        font-size: 4.0rem;
+
+    }
 
 
     .about-hero-text-2 {
