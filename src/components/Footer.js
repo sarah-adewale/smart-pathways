@@ -2,8 +2,49 @@ import React from "react";
 import FooterSubscribeForm from "./FooterSubscribeForm";
 import CustomLink from "./CustomLink";
 import SocialIcons from "./SocialIcons";
+import PopupForm from "./GetBrochureForm";
+import RegistrationForm from "./ImmigrationRegistrationForm";
+import { useState, useEffect } from "react";
 
 const Footer = () => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const [isRegistrationFormOpen, setIsRegistrationFormOpen] = useState(false)
+
+  const openPopup = () => {
+    setIsPopupOpen(true);
+  };
+
+  const closePopup = () => {
+    setIsPopupOpen(false);
+  };
+
+  const openRegistrationForm = () => {
+    setIsRegistrationFormOpen(true)
+  }
+
+  const closeRegistrationForm = () => {
+    setIsRegistrationFormOpen(false)
+  }
+
+    useEffect(() => {
+    const handleResize = () => {
+    
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+  
+    handleResize();
+
+  
+    window.addEventListener('resize', handleResize);
+
+ 
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
     return (
         <>
             <footer>
@@ -18,17 +59,19 @@ const Footer = () => {
                         <div className="block footer-links">
                             <p className="business-links-title">Company</p>
                             {/* <div className="block gap-20 "> */}
-                                <CustomLink className="company-links-text">About us</CustomLink>
-                                <CustomLink className="company-links-text">International Students</CustomLink>
-                                <CustomLink className="company-links-text">Permanent Residence</CustomLink>
+                                <CustomLink to={"/about"} className="company-links-text">About us</CustomLink>
+                                <CustomLink to={"/international-student"} className="company-links-text">International Students</CustomLink>
+                                <CustomLink to={"/permanent-residence"} className="company-links-text">Permanent Residence</CustomLink>
                             {/* </div> */}
                         </div>
                         <div className="block footer-links">
                             <p className="business-links-title">QuickLinks</p>
                             <CustomLink to={'https://calendly.com/smartpathways/30min'} target={'_blank'} className="company-links-text">Book an appointment</CustomLink>
-                            <CustomLink className="company-links-text">Start Application</CustomLink>
+                            <CustomLink className="company-links-text" onClick={openRegistrationForm}>Start Application</CustomLink>
+                            {isRegistrationFormOpen && <RegistrationForm onClose={closeRegistrationForm}/>}
                             {/* <CustomLink className="company-links-text">Immigration Assessment Form</CustomLink> */}
-                            <CustomLink className="company-links-text">Get Brochure</CustomLink>
+                            <CustomLink className="company-links-text" onClick={openPopup}>Get Brochure</CustomLink>
+                            {isPopupOpen && <PopupForm onClose={closePopup} isMobile={isMobile} />}
                         </div>
                         <div className="footer-logo">
                             <CustomLink to="/" ><img src="/images/logo.png" alt="site-logo" /> </CustomLink>

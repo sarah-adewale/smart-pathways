@@ -6,25 +6,11 @@ import PermanentResidence from './components/PermanentResidence';
 import Footer from './components/Footer';
 
 import { Route, Routes } from 'react-router-dom';
+// import RegistrationForm from './components/ImmigrationRegistrationForm';
 
 function App() {
-  // let component
-  // switch (window.location.pathname) {
-  //   case "/":
-  //     component = <Home />
-  //     break;
-  //   case "/about":
-  //     component = <About />
-  //     break;
-  //   case "/international-student":
-  //     component = <InternationalStudent />
-  //     break;
-  //   case "/permanent-residence":
-  //     component = <PermanentResidence />
-  //     break;
-  //   default:
-  //     break;
-  // }
+  console.log(process.env.REACT_APP_PUBLIC_KEY)
+  
   return (
     <>
           <Nav />
@@ -35,6 +21,7 @@ function App() {
               <Route path="/about" element={<About />}></Route>
               <Route path="/international-student" element={<InternationalStudent />}></Route>
               <Route path="/permanent-residence" element={<PermanentResidence />}></Route>
+              {/* <Route path="/immigration-registration" element={<RegistrationForm />}></Route> */}
             </Routes>
           </div>
           <Footer />

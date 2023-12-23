@@ -119,8 +119,8 @@ function Home(){
                                 <h2 className='blog-title' >Canada Universities reduces cost by 10% for all students for summer 2024</h2>
                                
                                 <div className='flex gap-5 blog-btn-section'>
-                                    <Button style={{width:'136px', backgroundColor:'#BDFC6D', color: '#360308', border: '1px solid #BDFC6D'}}>Visit blog</Button>
-                                    <Button style={{width:'156px'}}>Read article</Button>
+                                    <CustomLink to={"http://blog.smartpathways.ca/"} target={'_blank'}><Button style={{width:'136px', backgroundColor:'#BDFC6D', color: '#360308', border: '1px solid #BDFC6D'}}>Visit blog</Button></CustomLink> 
+                                    <CustomLink to={"http://blog.smartpathways.ca/"} target={'_blank'}><Button style={{width:'156px'}}>Read article</Button></CustomLink>
                                 </div>
                          
                         </section>

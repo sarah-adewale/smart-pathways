@@ -22,6 +22,7 @@ function Nav(){
     { text: 'Start application', link: '#' },
   ];
 
+
   const icons = [<Carlendar/>, <MultipleFile/>, <Star/>]
 
     return(
@@ -46,8 +47,9 @@ function Nav(){
                         <ul className={`menu ${menuOpen ? 'active' : ''}`}>
                             <div className="flex gap-12 mr-72 mobile-nav">
                                 <CustomLink to="/about" >About</CustomLink>
-                                <CustomLink to="#" class="">International Students</CustomLink>
-                                <CustomLink to="#">Permanent Residence</CustomLink>
+                                <CustomLink to="/international-student" class="">International Students</CustomLink>
+                                <CustomLink to="/permanent-residence">Permanent Residence</CustomLink>
+                                <CustomLink to="http://blog.smartpathways.ca/" target={'_blank'}>Blog</CustomLink>
                             </div>
                         </ul>
                             <div>
